@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="changeme" default="all" basedir=".">
+	<target name="install-java">
+		<mkdir dir="java" />
+	</target>
+	<!--
+	SQL files be like:
+	/sql/structure/tables/users.sql
+	/sql/structure/views/user_selection.sql
+	1 table, function, view etc. per file. Modified when structure changes
+	/sql/data/default/1.0.0/20160428_0123_superuser.sql
+	These files are executed in an incremental order, they should not be modified
+	-->
+	<target name="install-sql">
+		<mkdir dir="sql" />
+	</target>
+</project>
